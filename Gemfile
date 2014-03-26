@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+ruby '2.1.1'
+
+gem 'sinatra', '~> 1.4.4'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'slim'
+gem 'rack'
+gem 'mysql2'
+gem 'activerecord-mysql-adapter'
