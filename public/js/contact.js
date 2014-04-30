@@ -52,7 +52,7 @@ $(document).ready(function(){
 				if(error == false){
 					//disable the submit button to avoid spamming
 					//and change the button text to Sending...
-					$('#send_message').attr({'disabled' : 'true', 'value' : 'Sending...' });
+					$('#send_message').attr({'disabled' : 'true', 'value' : 'Enviando...' });
 					
 					/* using the jquery's post(ajax) function and a lifesaver
 					function serialize() which gets all the data from the form
@@ -68,7 +68,7 @@ $(document).ready(function(){
 							//show the mail failed div
 							$('#mail_fail').fadeIn(500);
 							//reenable the submit button by removing attribute disabled and change the text back to Send The Message
-							$('#send_message').removeAttr('disabled').attr('value', 'Submit');
+							$('#send_message').removeAttr('disabled').attr('value', 'Enviar');
 						}
 					});
 				}

@@ -49,7 +49,7 @@ DESCRIPTION: A premium business and portfolio theme.
 	
 /* Custom Grid */
 
-	.navigation_container               {width: auto; background-color: #D0FBDB; height: 140px;}
+	.navigation_container               {width: auto; background-color: #FFF506; height: 140px;}
 	.container_12 						{margin-left:auto; margin-right:auto; width:1020px;}
 	.container_menu 					{margin-left:auto; margin-right:auto; width: 70%;}
 	.float								{display:inline; float:left; position:relative;}
@@ -83,7 +83,7 @@ DESCRIPTION: A premium business and portfolio theme.
 	.hr									{border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #FAA3B4; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;}
 	.pr									{border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #FAA3B4; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0; margin-bottom :30px;}
 	.dotted								{border-style:dashed; border-left:0; border-right:0;}	
-	.meta								{font-weight:normal;font-family:'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif; font-size:11px; color:#999999 !important; line-height:16px; text-transform:none; text-shadow:none;}
+	.meta								{font-weight:bold;font-family:'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif; font-size:11px; color:#3FA82B !important; line-height:16px; text-transform:none; text-shadow:none;}
 	.right								{float:right;}
 	.left								{float:left;}
 	.img_left							{float:left; margin:10px 20px 10px 0;}
@@ -106,9 +106,8 @@ DESCRIPTION: A premium business and portfolio theme.
 
 	ul#navigation						{text-transform:uppercase;}
 	ul#navigation li 					{float:right; display:inline; margin : 0 0 0 50px;}
-	ul#navigation li a					{font-family:arial, sans-serif !important; display:block; padding:44px 0 0; text-decoration:none; color:#000000; font-size:14px; font-weight:bold;}
-	ul#navigation li a:hover,
-	ul#navigation li a.current			{background:url(../images/triangle.gif) no-repeat center top;}
+	ul#navigation li a					{font-family:'Open Sans', arial, sans-serif !important; display:block; padding:44px 0 0; text-decoration:none; color:#EB0707; font-size:14px; font-weight:bold;}
+	ul#navigation li a:hover,           {color:#9d9d9d;}
 
 /* Footer */
 

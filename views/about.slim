@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    == include_slim 'header'
+  body
+    #wrapper.container_12.clearfix
+      /! Caption Line
+      h2.grid_12.caption
+        | Um pouco mais sobre a Flufy.
+      .hr.grid_12.clearfix &nbsp;
+      /! Column 1 / Content
+      .grid_8
+        h4.page_title Quem faz a Flufy?
+        .hr.dotted.clearfix &nbsp;
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam id mauris accumsan egestas. Sed sed lorem. Integer id mi vel sapien fermentum vehicula. Pellentesque vitae lacus a sem posuere fringilla. Vestibulum dolor. Phasellus cursus augue ac purus. Curabitur faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam id mauris accumsan egestas. Sed sed lorem. Integer id mi vel sapien fermentum vehicula. Pellentesque vitae lacus a sem posuere fringilla. Vestibulum dolor. Phasellus cursus augue ac purus. Curabitur faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      /! Column 2 / Sidebar
+      .grid_4
+        h4 Marcas
+        .hr.dotted.clearfix &nbsp;
+        dl.history
+          dt Bla
+          dd Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam id mauris accumsan egestas. Sed sed lorem. Integer id mi vel sapien fermentum vehicula. Pellentesque vitae lacus a sem posuere fringilla. Vestibulum dolor.
+      .hr.grid_12.clearfix &nbsp;
+      /! Footer
+      == include_slim 'footer'
+    /! end wrapper
