@@ -1,7 +1,7 @@
 doctype html
 html xmlns="http://www.w3.org/1999/xhtml" 
   head
-    == include_slim 'header'
+    == include_slim '_header'
   body
     #wrapper.container_12.clearfix
       /! Featured Image Slider
@@ -24,32 +24,8 @@ html xmlns="http://www.w3.org/1999/xhtml"
       h5.grid_12.caption.clearfix
         | A Flufy está no mercado desde [ano] na cidade do Recife, Pernambuco. Na Flufy você encontra roupinhas e brinquedos para os recém-nascidos, acessórios para facilitar a vida das mamães, seja de primeira viagem ou não. Roupas e brinquedos para os mais grandinhos...
         | Confira nossos produtos e venha nos visitar!
-      .grid_12
-        a.portfolio_item.float.alpha href="portfolio_single.html" 
-          span Meninas | Girls
-          img alt="" height="112" src="images/flufy-meninas.png" width="223" /
-        a.portfolio_item.float href="#" 
-          span Meninos | Boys
-          img alt="" height="112" src="images/flufy-meninos.png" width="223" /
-        a.portfolio_item.float href="#" 
-          span Brinquedos | Toys
-          img alt="" height="112" src="images/flufy-brinquedos.png" width="223" /
-        a.portfolio_item.float.omega href="#" 
-          span Recém nascidos | New borns
-          img alt="" height="112" src="images/flufy-0-6meses.png" width="223" /
-        a.portfolio_item.float.alpha href="#" 
-          span Outra | Other
-          img alt="" height="112" src="images/flufy-categoria.png" width="223" /
-        a.portfolio_item.float href="#" 
-          span Outra | Other
-          img alt="" height="112" src="images/flufy-categoria.png" width="223" /
-        a.portfolio_item.float href="#" 
-          span Outra | Other
-          img alt="" height="112" src="images/flufy-categoria.png" width="223" /
-        a.portfolio_item.float.omega href="#" 
-          span Outra | Other
-          img alt="" height="112" src="images/flufy-categoria.png" width="223" /
+      == include_slim '_products_grid'
       .hr.grid_12.clearfix &nbsp;
       /! Footer
-      == include_slim 'footer'
+      == include_slim '_footer'
     /! end wrapper

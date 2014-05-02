@@ -2,7 +2,7 @@ doctype html
 html
   head
     script src="js/contact.js" type="text/javascript"
-    == include_slim 'header'
+    == include_slim '_header'
   body
     #wrapper.container_12.clearfix
       .hr.grid_12.clearfix &nbsp;
@@ -12,82 +12,40 @@ html
         span fale conosco
       .hr.grid_12.clearfix &nbsp;
       /! Column 1 / Content
-      .grid_8
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel porta erat. Quisque sit amet risus at odio pellentesque sollicitudin. Proin suscipit molestie facilisis. Aenean vel massa magna. Proin nec lacinia augue. Mauris venenatis libero nec odio viverra consequat. In hac habitasse platea dictumst.
-        /! Contact Form
-        form#contact_form action="#" method="post" 
-          h3 Nos envie um Email:
-          .hr.dotted.clearfix &nbsp;
-          ul
-            li.clearfix
-              label for="name"  Nome
-              input#name name="name" type="text" /
-              .clear
-              p#name_error.error Coloque o seu nome
-            li.clearfix
-              label for="email"  Seu Email
-              input#email name="email" type="text" /
-              .clear
-              p#email_error.error Por favor, insira um endereço de email válido
-            li.clearfix
-              label for="subject"  Assunto
-              input#subject name="subject" type="text" /
-              .clear
-              p#subject_error.error Nos informe o assunto de sua mensagem
-            li.clearfix
-              label for="message"  Mensagem
-              textarea#message cols="30" name="message" rows="30" 
-              .clear
-              p#message_error.error Qual sua mensagem?
-            li.clearfix
-              p#mail_success.success Obrigada. Enviaremos uma resposta o mais rápido possível.
-              p#mail_fail.error Desculpe, algo que não esperávamos aconteceu. Por favor, tente novamente mais tarde.
-              #button
-                input#send_message.button type="submit" value="Enviar" /
-      /! Column 2 / Sidebar
-      .grid_4.contact
-        /! Adress and Phone Details
-        h4 Endereços e Telefone
+      .grid_12
+        h3 Encontre a loja mais perto de você:
         .hr.dotted.clearfix &nbsp;
-        ul
+        .grid_8
           li
-            strong Flufy - Coisa de criança
-            br/
-            | Rua do Futuro, 190
+            strong Rua do Futuro, 190
             br/
             | Jaqueira, Recife-PE
             br/
-            | Brasil
+            | (081) XXXX-XXXX
             br/
-            br/
-          li (081) XXXX-XXXX
-        /! Email Addresses
-        h4 Emails
+        .grid_4
+          img alt="" src="images/flufy-jaqueira.jpg" width=160 height=140
         .hr.dotted.clearfix &nbsp;
-        ul
-          li
-            | Geral -
-            a href="#"  info@flufy.com
-        /! Social Profile Links
-        h4 Redes Sociais
+        li
+          strong Shopping Rio Mar, Loja XX 2º piso
+          br/
+          | Boa Viagem, Recife-PE
+          br/
+          | (081) XXXX-XXXX
+          br/
         .hr.dotted.clearfix &nbsp;
-        ul
-          li.float
-            a href="#" 
-              img alt="" src="images/twitter.png" /
-          li.float
-            a href="#" 
-              img alt="" src="images/facebook.png" /
-          li.float
-            a href="#" 
-              img alt="" src="images/stumbleupon.png" /
-          li.float
-            a href="#" 
-              img alt="" src="images/flickr.png" /
-          li.float
-            a href="#" 
-              img alt="" src="images/delicious.png" /
+        li
+          strong Conde da Boa Vista, XX
+          br/
+          | Boa Vista, Recife-PE
+          br/
+          | (081) XXXX-XXXX
+          br/
+      .hr.grid_12.clearfix &nbsp;
+      .grid_12
+        == include_slim '_contact_email'
+      
       .hr.grid_12.clearfix &nbsp;
       /! Footer
-      == include_slim 'footer'
+      == include_slim '_footer'
     /! end wrapper
