@@ -6,50 +6,30 @@ html
     #wrapper.container_12.clearfix
       /! Catch Line and Link
       h2.grid_12.caption.clearfix
-        | Our home to our latest, and greatest work.
+        | Roupas - Meninas
+        /!replaceto:[category.name]
+        a.button.right href="products"  &lt;&lt; Todos os Produtos
       .hr.grid_12.clearfix &nbsp;
-      /! Column 1 / Project Information
+      /! Column 1 / Product information
       .grid_4
-        a.meta href="#"  www.siteurlgoeshere.com
-        h4.title Project Name
+        div
+          /!replaceto:[product.name]
+          h4.title.left Vestido de Festa 
+          /!replaceto:[product.price]
+          h6.right R$ 69,90
         .hr.dotted.clearfix &nbsp;
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          b Mauris vel porta erat.
-          | Quisque sit amet risus at odio pellentesque sollicitudin. Proin suscipit molestie facilisis. Aenean vel massa magna. Proin nec lacinia augue. Mauris venenatis libero nec odio viverra consequat. In hac habitasse platea dictumst.
-        p Cras vestibulum lorem et dui mollis sed posuere leo semper. Integer ac ultrices neque. Cras lacinia orci a augue tempor egestas. Sed cursus, sem ut vehicula vehicula, ipsum est mattis justo, at volutpat nibh arcu sit amet risus. Vestibulum tincidunt, eros ut commodo laoreet, arcu eros ultrices nibh, ac auctor est dui vel nibh.
+        /!replaceto:[product.description]
+        p.dark_green Cras vestibulum lorem et dui mollis sed posuere leo semper. Integer ac ultrices neque. Cras lacinia orci a augue tempor egestas. Sed cursus, sem ut vehicula vehicula, ipsum est mattis justo, at volutpat nibh arcu sit amet risus. Vestibulum tincidunt, eros ut commodo laoreet, arcu eros ultrices nibh, ac auctor est dui vel nibh.
         p.clearfix
-          a.button.float href="#"  &lt;&lt; Back to Portfolio
-          a.button.float.right href="#"  Visit Site
-      /! Column 2 / Image Carosuel
-      #folio_scroller_container.grid_8.cleafix
-        ul#folio_scroller
-          li
-            span Homepage
-            a href="#" 
-              img alt="" src="images/600x300.gif" /
-          li
-            span Content Page
-            a href="#" 
-              img alt="" src="images/600x300.gif" /
-          li
-            span Dropdown Menu
-            a href="#" 
-              img alt="" src="images/600x300.gif" /
-          li
-            span Comments List
-            a href="#" 
-              img alt="" src="images/600x300.gif" /
-          li
-            span Comment Form
-            a href="#" 
-              img alt="" src="images/600x300.gif" /
+      .grid_8
+        a href="#" 
+          img alt="" src="images/610x150.gif" /
+      .hr.grid_12.dotted.clearfix &nbsp;
+      p.grid_12.float All other products here...
       .hr.grid_12.clearfix &nbsp;
       /! Client pickup line
-      h2.grid_12.caption
-        | Like this project? We can do something similar for you.
-        a href="#" 
-          span Get in touch...
+      p.grid_12.center
+        | 1 | 2 | 3 | 4 | 5
       .hr.grid_12.clearfix &nbsp;
       /! Footer
       == include_slim '_footer'

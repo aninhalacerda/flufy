@@ -83,16 +83,19 @@ DESCRIPTION: A premium business and portfolio theme.
 	.hr									{border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #FAA3B4; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;}
 	.pr									{border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #FAA3B4; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0; margin-bottom :30px;}
 	.dotted								{border-style:dashed; border-left:0; border-right:0;}	
-	.meta								{font-weight:bold;font-family:'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif; font-size:11px; color:#9CCA3F !important; line-height:16px; text-transform:none; text-shadow:none;}
+	.meta								{font-weight:bold;font-family:'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif; font-size:11px; line-height:16px; text-transform:none; text-shadow:none;}
 	.right								{float:right;}
 	.left								{float:left;}
+	.center                             {text-align: center;} 
 	.img_left							{float:left; margin:10px 20px 10px 0;}
 	.img_right							{float:right; margin:10px 0 10px 20px;}
 	.clear								{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
 	.textright 							{text-align:right;}
 	.error,
 	.success							{display:none;}
-	.red                                {color: red;}
+	.red                                {color: #D72826;}
+	.light_green                        {color: #9CCA3F;}
+	.dark_green                         {color: #6D9A25;}
 
 /* Buttons */
 
