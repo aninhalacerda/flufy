@@ -3,8 +3,8 @@ development:
   database: flufy_db
   username: flufyuser
   password: d4t4!flufy
-  host: 127.0.0.1
-  port: 3306
+  host: localhost
+  port: 5432
 production:
   adapter: postgresql
   database: flufy_db

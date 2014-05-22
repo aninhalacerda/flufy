@@ -5,6 +5,8 @@ require 'yaml'
 require 'pry'
 require 'sinatra-env'
 
+require_relative 'models/init'
+
 DB_CONFIG = YAML.load(ERB.new(File.read(File.join("config","database.yml"))).result)[Sinatra.env]
 
 configure :production do
@@ -14,6 +16,16 @@ end
 
 configure :development do
   set :database, "postgresql://#{DB_CONFIG['username']}:#{DB_CONFIG['password']}@#{DB_CONFIG['host']}:#{DB_CONFIG['port']}/#{DB_CONFIG['database']}"
+end
+
+models = File.join(File.dirname(__FILE__), 'models') # path to your models
+$LOAD_PATH << File.expand_path(models)
+
+# Constent Missing for requiring models files
+def Object.const_missing(const)
+    require const.to_s.underscore
+    klass = const_get(const)
+    return klass if klass
 end
 
 helpers do
