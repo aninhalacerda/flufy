@@ -1,5 +1,12 @@
 require 'sinatra'
 require 'slim'
+require 'sinatra/activerecord'
+require 'yaml'
+require 'pry'
+require 'sinatra-env'
+
+DB_CONFIG = YAML::load(File.open('config/database.yml'))[Sinatra.env]
+set :database, "mysql://#{DB_CONFIG['username']}:#{DB_CONFIG['password']}@#{DB_CONFIG['host']}:#{DB_CONFIG['port']}/#{DB_CONFIG['database']}"
 
 helpers do
   def include_slim(name, options = {}, &block)
