@@ -1,4 +1,4 @@
-adapter: mysql2
+adapter: postgresql
 database: flufy_db
 username: flufyuser
 password: d4t4!flufy
