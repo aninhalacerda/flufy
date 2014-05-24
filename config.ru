@@ -1,3 +1,6 @@
 # config.ru
 require "./app"
-run Sinatra::Application
+run Rack::URLMap.new({
+  "/" => App::Public,
+  "/protected" => App::Protected
+})
